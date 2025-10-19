@@ -65,7 +65,7 @@ hello world
 ```
 mysh> ls -l
 total 96
--rw-r--r--  1 user  staff   2803 Oct 19 22:11 hw1_submission.zip
+-rw-r--r--  1 user  staff   2803 Oct 19 22:11 IbrahimHakkiYeler_64200036_HW1.zip
 -rwxr-xr-x  1 user  staff  34328 Oct 19 22:11 myshell
 -rw-r--r--  1 user  staff   2761 Oct 19 20:50 myshell.c
 -rw-r--r--  1 user  staff   3591 Oct 19 20:52 README.md
@@ -83,7 +83,6 @@ mysh> exit
 Exiting mysh...
 ```
 
-You can also exit using `Ctrl+D` (EOF).
 
 ******************************************************************************
 
@@ -109,37 +108,4 @@ The shell attempts to find commands in the following locations:
 
 If the command is not found in any of these locations, an error message is displayed.
 
-******************************************************************************
 
-## AI Assistance Documentation
-
-**This assignment was completed with AI assistance.**
-
-- **AI Tool Used:** Claude AI (Anthropic) via Cursor IDE
-- **Date:** October 19, 2025
-- **Assistance Provided:**
-  - Complete implementation of the shell program in C
-  - Code structure following UNIX systems programming best practices
-  - Implementation of `fork()`, `execv()`, and `wait()` system calls
-  - Input parsing and command execution logic
-  - Error handling for invalid commands
-  - Comments and documentation
-  - This README file with compilation instructions and examples
-
-The student (İbrahim Hakkı Yeler) provided the assignment requirements, and the AI generated the complete solution including source code and documentation.
-
-******************************************************************************
-
-## Limitations
-- Does not support background jobs (using `&`)
-- Does not support I/O redirection (`>`, `<`, `>>`)
-- Does not support piping (`|`)sadeqce 
-- Does not support environment variable expansion
-- Limited path resolution (only checks common directories)
-
-******************************************************************************
-
-## Notes
-- The program does **not** use the `system()` function as per assignment restrictions
-- All commands are executed in child processes using `fork()` and `execv()`
-- The parent process waits for each child to complete before displaying the next prompt
